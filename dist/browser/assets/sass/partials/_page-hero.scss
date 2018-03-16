@@ -1,0 +1,69 @@
+.page-hero {
+	position: relative;
+	padding: 2rem 0;
+	min-height: 300px;
+	@include background-variant(cover, center, no-repeat);
+	@include transition(all .5s ease);
+	&:before {
+		content: " ";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: rgb(4,10,55); /* Old browsers */
+		background: -moz-linear-gradient(-45deg,  rgba(4,10,55,1) 0%, rgba(103,0,17,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg,  rgba(4,10,55,1) 0%,rgba(103,0,17,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg,  rgba(4,10,55,1) 0%,rgba(103,0,17,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040a37', endColorstr='#670011',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		@include opacity(.65);
+		@include transition(all .4s ease);
+	}
+	.hero-heading {
+		font-size: 3rem;
+		@include breakpoint($phone) {
+			font-size: 2rem;
+		}
+		@include breakpoint($medium-min) {
+			font-size: 3.5rem;
+		}
+	}
+	&.-bg-color {
+		background-color: #fff;
+		min-height: 200px;
+		&:before {
+			background: rgb(3,23,195); /* Old browsers */
+			background: -moz-linear-gradient(-45deg,  rgba(3,23,195,1) 0%, rgba(255,14,94,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(-45deg,  rgba(3,23,195,1) 0%,rgba(255,14,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(135deg,  rgba(3,23,195,1) 0%,rgba(255,14,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0317c3', endColorstr='#ff0e5e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			@include opacity(1);
+		}
+	}
+	&.-bg-image {
+		position: relative;
+		img {
+			position: absolute;
+			display: block;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: covrer;
+		}
+	}
+}
+
+.page-heading {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	@include breakpoint($phone) {
+		font-size: 2rem;
+	}
+}

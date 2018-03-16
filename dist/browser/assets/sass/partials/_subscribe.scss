@@ -1,0 +1,31 @@
+.subscribe-card {
+	background-image: url('../images/subscribe.png');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	padding: 30px;
+	margin-bottom: 30px;
+
+	.subscribe-title {
+		font-weight: bold;
+		color: #fff;
+		margin-bottom: 1.25rem;
+	}
+}
+.row-subscribe {
+	margin-left: -5px;
+	margin-right: -5px;
+	[class*="col-"] {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.--inside-article {
+	background-image: none;
+	background-color: #f6f6f7;
+
+	.subscribe-title {
+		color: $color-secondary;
+	}
+}

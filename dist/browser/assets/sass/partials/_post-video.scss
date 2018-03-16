@@ -1,0 +1,201 @@
+.video-card {
+	position: relative;
+	margin-bottom: 60px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: all .15s cubic-bezier(.33,.66,.66,1);
+	transition: all .15s cubic-bezier(.33,.66,.66,1);
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	&:hover {
+		// -webkit-transform: translate3d(0,-4px,0);
+  //         transform: translate3d(0,-4px,0);
+		.video-title {
+			color: $color-secondary;
+		}
+	}
+	.video-card-block {
+		position: relative;
+	}
+
+	.video-media {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio */
+		@include border-radius(4px);
+		//@include box-shadow(0 5px 20px 5px rgba(0, 0, 0, 0.2));
+	}
+	.video-image {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background: rgb(0,26,255);
+		background: -moz-linear-gradient(45deg,  rgba(0,26,255,1) 0%, rgba(255,14,94,1) 100%);
+		background: -webkit-linear-gradient(45deg,  rgba(0,26,255,1) 0%,rgba(255,14,94,1) 100%);
+		background: linear-gradient(45deg,  rgba(0,26,255,1) 0%,rgba(255,14,94,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001aff', endColorstr='#ff0e5e',GradientType=1 );
+		@include background-variant(cover, center, no-repeat);
+		@include border-radius(4px);
+
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			object-fit: cover;
+		}
+		
+	}
+	.video-play {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		  -ms-flex-align: center;
+		      align-items: center;
+		-webkit-box-pack: center;
+		  -ms-flex-pack: center;
+		      justify-content: center;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		font-size: 36px;
+		line-height: 1;
+		color: #fff;
+		text-align: center;
+		width: 60px;
+		height: 60px;
+		background-color: rgba(255, 255, 255, 0.15);
+		@include border-radius(50%);
+		transition: all 0.2s;
+		-webkit-transform: -webkit-translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	.video-denote {
+		padding-top: 15px;
+	}
+	.video-title {
+		font-size: 1.125rem;
+		line-height: 1.2;
+		margin-bottom: 0;
+	}
+	&:hover {
+		.video-play {
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+	}
+}
+
+.video-card-classic {
+	.video-media {
+		@include box-shadow(0 5px 20px 5px rgba(0, 0, 0, 0.15));
+	}
+	.video-denote {
+		position: relative;
+		margin: -40px auto 0;
+		background-color: #fff;
+		padding: 15px 20px 30px;
+		max-width: 80%;
+		@include border-radius(4px 4px 0 0)
+	}
+	.video-title {
+		font-size: 1rem;
+	}
+	&:hover {
+		.video-media {
+			@include box-shadow(0 5px 20px 5px rgba(0, 0, 0, 0.2));
+		}
+	}
+}
+
+.video-card-classic-box {
+	margin-bottom: 30px;
+	background-color: #fff;
+	@include border-radius(4px);
+	@include box-shadow(0 5px 20px 0 rgba(0, 0, 0, 0.1));
+
+	.video-denote {
+		padding: 15px 20px;
+	}
+	.video-title {
+		font-size: 1.125rem;
+	}
+}
+
+.video-card-canny {
+	margin-bottom: 0;
+	height: 100%;
+	padding-bottom: 20px;
+	.video-card-block {
+		min-height: 100%;
+		border: 1px solid $border-color;
+		@include border-radius(4px);
+	}
+	.video-denote {
+		padding: 15px;
+	}
+}
+
+.video-hero-video {
+	background-color: #111;
+}
+.video-hero-content {
+	background-color: #f6f6f7;
+	padding: 2rem 0;
+	color: #fff;
+	
+	.hero-heading {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+}
+.row-share-video {
+	margin-left: -5px;
+	margin-right: -5px;
+	[class*="col-"] {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.btn {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		  -ms-flex-align: center;
+		      align-items: center;
+		-webkit-box-pack: center;
+		  -ms-flex-pack: center;
+		      justify-content: center;
+		font-weight: 500;
+		margin-top: 10px;
+
+		i {
+			font-size: 1.75rem;
+			margin-right: 8px;
+		}
+	}
+}
+
+
+.video-hero-embed {
+	.embed-responsive {
+		&:before {
+			padding-top: 45%;
+		}
+	}
+}

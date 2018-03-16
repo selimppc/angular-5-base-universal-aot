@@ -1,0 +1,22 @@
+.-parallax-home {
+	.--parallax-home {
+		background-color: #fff;
+		padding-top: 10px;
+		padding-left: 20px;
+	}	
+	.post-card-sparing {
+		margin-bottom: 10px;
+		.post-card-block {
+			background-color: #fff;
+			padding: 20px;
+		}
+	}
+	.video-card-canny {
+		.post-card-block {
+			background-color: #fff;
+		}
+	}
+	.subscribe-card {
+		margin-bottom: 10px;
+	}	
+}

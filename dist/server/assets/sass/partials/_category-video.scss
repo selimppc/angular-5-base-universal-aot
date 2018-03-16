@@ -1,0 +1,74 @@
+.hero-video {
+	height: 550px;
+	position: relative;
+}
+
+.mb_YTPBar .mb_YTPseekbar {
+	background: $color-secondary;
+}
+
+.fsf-video-flex {
+	display: flex;
+	align-items: center;
+	.video-play {
+		font-size: 3.5rem;
+		line-height: 1;
+		color: #fff;
+		padding-right: .75rem;
+	}
+	.fsf-heading {
+		margin-bottom: 0;
+	}
+}
+
+
+.video-playbar {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	  -ms-flex-align: center;
+	      align-items: center;
+	.video-play {
+		font-size: 3.5rem;
+		line-height: 1;
+		color: #fff;
+		padding-right: .75rem;
+	}
+	.hero-card-heading {
+		margin-bottom: 0;
+	}
+}
+
+.post-card {
+	.video-play {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		  -ms-flex-align: center;
+		      align-items: center;
+		-webkit-box-pack: center;
+		  -ms-flex-pack: center;
+		      justify-content: center;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		font-size: 36px;
+		line-height: 1;
+		color: #fff;
+		text-align: center;
+		width: 60px;
+		height: 60px;
+		background-color: rgba(255, 255, 255, 0.15);
+		@include border-radius(50%);
+		transition: all 0.2s;
+		-webkit-transform: -webkit-translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	&:hover {
+		.video-play {
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+	}
+}

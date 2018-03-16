@@ -1,0 +1,134 @@
+
+.podcast-card {
+	background-color: #fff;	
+	margin-bottom: 20px;
+	border-bottom: 1px solid $border-color;
+	.podcast-header {
+		padding-bottom: 15px;
+	}
+	.podcast-footer {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	
+
+	.podcast-title {
+		font-size: 1.25rem;
+	}
+	.podcast-subtitle {
+		margin-bottom: 0;
+	}
+
+	&.--case {
+		border: 0;
+		@include box-shadow(0 0 20px 5px rgba(0, 0, 0, 0.1));
+		.podcast-header, .podcast-body, .podcast-footer {
+			padding: 15px 20px;
+		}
+		.podcast-footer {
+			padding-top: 0;
+		}
+		&:hover {
+			@include box-shadow(0 5px 20px 5px rgba(0, 0, 0, 0.15));
+		}
+	}
+}
+
+.podcast-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	  align-items: center;
+}
+.podcast-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	  -ms-flex-align: center;
+	      align-items: center;
+	-webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+	      justify-content: space-between;
+}
+.podcast-topic-link {
+	padding-right: 20px;
+	a {
+		text-transform: uppercase;
+		color: $color-heading;
+		font-weight: 500;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		  align-items: center;
+	}
+}
+.podcast-icon {
+	display: inline-block;
+	margin-right: 10px;
+	width: 28px;
+	height: 28px;
+	font-size: 20px;
+	color: #fff;
+	line-height: 28px;
+	text-align: center;
+	background-color: $color-primary;
+	@include border-radius(50%);
+}
+.podcast-meta {
+	font-size: 14px;
+	a {
+		color: $color-text;
+	}
+}
+
+
+.podcast-shares {
+	list-style: none;
+	margin: 0 -5px;
+	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	  align-items: center;
+	li {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	a {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: $color-text;
+		border: 1px solid $border-color;
+		@include border-radius(50%);
+	}
+	.share-title {
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+
+}
+.podcast-morelink {
+	a {
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+}
+
+.podcast-embed {
+	.widget {
+		border: none;
+	}
+}
+

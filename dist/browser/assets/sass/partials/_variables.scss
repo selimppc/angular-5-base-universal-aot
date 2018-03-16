@@ -1,0 +1,93 @@
+
+$color-primary:                  #001aff;
+$color-secondary:                #ff0e5e;
+$color-success:                  #5cb85c;
+$color-info:                     #5bc0de;
+$color-warning:                  #f0ad4e;
+$color-danger:                   #d9534f;
+
+$color-gray-base:                #111111;
+$color-gray-light:               lighten($color-gray-base, 15%);
+$color-muted:                    lighten($color-gray-base, 55%);
+$color-muted-lighter: 			 #e2e2e2;
+
+$color-heading:                  $color-gray-base;
+$color-text:                     #4f4f50;
+
+$color-linked:                   $color-secondary;
+$color-linked-hover:             darken($color-linked, 15%);
+
+$border-color:                   #ebebeb; 
+$border-color-lighten:           lighten($color-gray-base, 88%); // #f1f1f1
+
+$gray-bg:                        #f1f1f1;
+$body-bg:                        #ffffff;
+$body-bg-home:                   #ffffff;
+$muted-bg:                       $color-muted;
+
+$ribbon-bg:                      #ddd;
+$btn-gray-bg:                    #dedede;
+$btn-gray-color:                 $color-gray-base;
+
+$brand-facebook:                 #3b5998;
+$brand-google:                   #dd4b39;
+$brand-twitter:                  #00aced;
+$brand-youtube:                  #bb0000;
+$brand-linkedin:                 #007bb5;
+$brand-instagram:                #125688;
+$brand-whatsapp:                 #4dc247;
+$brand-pinterest:                #cb2027;
+$brand-flickr:                   #ff0084;
+$brand-tumblr:                   #32506d;
+$brand-vk:                       #45668e;
+
+
+// CATEGORIES COLOR
+$tech: 							 #ffaf00;
+$lifestyle: 					 #ea0599;
+$travel: 						 #a0e418;
+$impact: 						 #2ca4bf;
+$entertainment: 				 #e70000;
+
+
+
+$ff-lato:                  		 'Lato', sans-serif;
+$ff-roboto-slab:                 'Roboto Slab', serif;
+$ff-oswald:                  	 'Oswald', sans-serif;
+$ff-teko:						 'Teko', sans-serif;
+$ff-lora:						 'Lora', serif;
+$ff-raleway:					 'Raleway', sans-serif;
+$ff-playfair-d: 				 'Playfair Display', serif;
+$ff-merriweather: 				 'Merriweather', serif;
+$ff-overpass: 				     'Overpass', sans-serif;
+
+// DIN FONTS
+$ff-din: 'DIN';
+
+
+
+$font-family-base:               $ff-din;
+$ff-base: 						 $ff-din;
+$font-family-accent: 			 $ff-din;
+$ff-accent: 			 		 $ff-din;
+$font-size-base:                 16px;
+$fs-base:                 		 16px;
+$font-weight-base:               400;
+$fw-base:               		 400;
+$font-color-base:                $color-text;
+$line-height-base:               1.57143;
+
+
+
+
+
+$phone:                          '(max-width: 575px)';
+$extra-small-min:                '(min-width: 576px)';
+$extra-small-max:                '(max-width: 767px)';
+$small-min:                      '(min-width: 768px)';
+$small-max:                      '(max-width: 991px)';
+$small-only:                     '(min-width: 768px) and (max-width: 991px)';
+$medium-min:                     '(min-width: 992px)';
+$medium-max:                     '(max-width: 1199px)';
+$medium-only:                    '(min-width: 992px) and (max-width: 1199px)';
+$large-min:                      '(min-width: 1200px)';

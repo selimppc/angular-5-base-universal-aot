@@ -1,0 +1,38 @@
+.category-page-header {
+	position: relative;
+	background-color: #393b4d;
+	padding: 2rem 0;
+	@include background-variant(cover, center, no-repeat);
+	color: #fff;
+	h1, h2, h3, h4 {
+		color: #fff;
+	}
+	&:before {
+		content: " ";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		@include background-opacity(#000, 0)
+	}
+	.page-header-content {
+		position: relative;
+	}
+	.page-heading {
+		font-size: 2.5rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&.tech {
+		&:before {
+			
+		}
+		.page-heading {
+
+		}
+	}
+}

@@ -1,0 +1,51 @@
+/* BUTTONS
+*************************************************** */
+.btn {
+	@include box-shadow(none !important);
+}
+.btn-base {
+	padding: .75rem 1rem;
+}
+.btn-primary {
+	@include base-button-variant(#fff, $color-primary, $color-primary);
+}
+.btn-second {
+	@include base-button-variant(#fff, $color-secondary, $color-secondary);
+}
+.btn-white {
+	@include base-button-variant(#333, #fff, #fff);
+}
+
+
+.btn-facebook {
+	@include base-button-variant(#fff, $brand-facebook, $brand-facebook);
+}
+.btn-twitter {
+	@include base-button-variant(#fff, $brand-twitter, $brand-twitter);
+}
+
+
+.btn-outline-white {
+	@include base-button-outline-variant($color-text, #fff);
+}
+.btn-outline-primary {
+	@include base-button-outline-variant($color-primary, $color-primary);
+}
+.btn-outline-second {
+	@include base-button-outline-variant($color-secondary, $color-secondary);
+}
+
+
+
+
+
+
+
+// BUTTONS CUSTOM
+.--more-stories {
+	font-weight: 600;
+	margin-top: 2.5rem;
+}
+
+
+

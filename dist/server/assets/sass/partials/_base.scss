@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+  @include selection {
+      color: white;
+      background: $color-secondary;
+  }
+}
+body {
+  background: $body-bg;
+  @include base-font-variant($font-family-base, $font-size-base, $font-weight-base, $font-color-base, $line-height-base);
+}
+body {
+  &.page-home {
+    background-color: $body-bg-home;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-accent;
+  color: $color-heading;
+}
+
+a {
+  color: $color-linked;
+  &:hover, &:focus {
+    color: $color-linked-hover;
+    outline: none;
+    text-decoration: none;
+  }
+}

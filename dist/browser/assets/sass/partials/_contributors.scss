@@ -1,0 +1,247 @@
+.contributors-hero {
+	position: relative;
+	padding: 2rem 0;
+	height: 300px;
+	@include background-variant(cover, center, no-repeat);
+	&:before {
+		content: " ";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		@include background-opacity(#15182e, .65);
+	}
+
+	.contributors-heading {
+		font-size: 4rem;
+	}
+}
+
+.contributors-list {
+	list-style: none;
+	margin: 0 -15px;
+	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	  flex-flow: row wrap;
+}
+.contributor-item {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 50px;
+	-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+	max-width: 25%;
+	text-align: center;
+	
+	
+
+	@media (min-width: 576px) and (max-width: 767px) {
+		-ms-flex: 0 0 50%;
+			flex: 0 0 50%;
+		max-width: 50%;
+		&:nth-child(n+3) {
+			border-top: 2px solid $border-color;
+		}
+	}
+	@media (min-width: 768px) and (max-width: 1199px) {
+		-ms-flex: 0 0 33.333333%;
+			flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+		&:nth-child(n+4) {
+			border-top: 2px solid $border-color;
+			margin-top: 50px;
+		}
+	}
+	@include breakpoint($large-min) {
+		-ms-flex: 0 0 20%;
+			flex: 0 0 20%;
+		max-width: 20%;
+		&:nth-child(n+6) {
+			border-top: 2px solid $border-color;
+			margin-top: 50px;
+		}
+	}
+	@include breakpoint($phone) {
+		-ms-flex: 0 0 50%;
+			flex: 0 0 50%;
+		max-width: 50%;
+		&:nth-child(n+3) {
+			border-top: 2px solid $border-color;
+			margin-top: 50px;
+		}
+	}
+	
+	a {
+		display: block;
+	}
+	.contributor-name {
+		font-size: 1.125rem;
+		color: $color-secondary;
+		margin-bottom: 0;
+	}
+}
+.contributor-media {
+	position: relative;
+	width: 140px;
+	height: 140px;
+	padding: 0;
+	overflow: hidden;
+	margin: 0 auto 15px;
+
+	@include breakpoint($phone) { 
+		width: 100px;
+		height: 100px;
+	}
+}
+.contributor-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	object-fit: cover;
+	@include border-radius(100%);
+	-webkit-transition:all .2s ease-in-out;
+ 	transition:all .2s ease-in-out;
+}
+
+
+.contributors-single-hero {
+	position: relative;
+	padding: 3rem 0;
+	&:before {
+		content: " ";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		background: rgb(3,23,195);
+		background: -moz-linear-gradient(-45deg,  rgba(3,23,195,1) 0%, rgba(255,14,94,1) 100%); 
+		background: -webkit-linear-gradient(-45deg,  rgba(3,23,195,1) 0%,rgba(255,14,94,1) 100%); 
+		background: linear-gradient(135deg,  rgba(3,23,195,1) 0%,rgba(255,14,94,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0317c3', endColorstr='#ff0e5e',GradientType=1 );
+	}
+	img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.contributro-socials {
+	margin: 5px -10px 0;
+	padding: 0;
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	  align-items: center;
+
+	li {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	a {
+		display: block;
+		font-size: 2.25rem;
+		color: #fff;
+		-webkit-transition: all 0.2s linear;
+		transition: all 0.2s linear;
+		&:hover {
+			color: $color-secondary;
+		}
+	}
+}
+.contribut-posts {
+
+}
+
+
+.contributor-bio-media {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	&:after {
+		content: " ";
+		display: block;
+		position: absolute;
+		left: 50px;
+		top: -15px;
+		right: -50px;
+		bottom: -15px;
+		z-index: 1;
+		@include background-opacity(#fff, $opacity: 0.15);
+	}
+	img {
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.contributor-bio-name {
+	display: block;
+	position: relative;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+.contributor-content {
+	padding-top: 4rem;
+}
+@include breakpoint($extra-small-max) {
+	.contributor-bio-media {
+		width: 140px;
+		height: 140px;
+		&:after {
+			right: -20px;
+		}
+	}
+	.contributor-bio-name {
+		font-size: 2rem;
+	}
+	.contributor-content {
+		padding-top: 2.5rem;
+	}
+}
+@include breakpoint($phone) {
+	.contributor-bio-media {
+		width: 130px;
+		height: 130px;
+		margin: 0 auto 2.5rem;
+		&:after {
+			left: -15px;
+			right: -15px;
+		}
+	}
+	.contributor-bio {
+		text-align: center;
+	}
+	.contributro-socials {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		  justify-content: center;
+	}
+}

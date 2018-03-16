@@ -1,0 +1,6 @@
+
+@include breakpoint($large-min) {
+	.container-max1000, .container {
+		max-width: 1000px;
+	}
+}
