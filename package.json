@@ -40,10 +40,10 @@
     "zone.js": "^0.8.4",
     "@nguniversal/express-engine": "^5.0.0-beta.1",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.1",
-    "ts-loader": "^3.1.1"
+    "ts-loader": "^9.4.2"
   },
   "devDependencies": {
-    "@angular/cli": "1.6.5",
+    "@angular/cli": "15.0.4",
     "@types/jasmine": "~2.8.0",
     "@types/jasminewd2": "^2.0.3",
     "@types/node": "^6.0.45",
